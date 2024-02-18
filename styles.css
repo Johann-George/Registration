@@ -1,0 +1,130 @@
+body{
+    background-image: url('signup_image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.center-screen{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:2em;
+    border-radius: 10px;
+    border-color: rgb(15, 14, 14);
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
+    background-color: rgba(26, 20, 20, 0.689);
+}
+
+table {
+    
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 45px;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+}
+
+th {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    padding:1em;
+    /* try this part of the code also */
+    /* display: flex; 
+    align-items: center;  */
+    /* height: 100%;  */
+    /* justify-content: center; */
+    /* margin-top: 0px; */
+    /* background-color: #515050; */
+    /* gap:10px; */
+    /*border-radius: 10px 10px 0 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+} 
+
+label{
+    display: block;
+    margin-bottom: -10px;
+    color: antiquewhite;
+}
+
+.textbox{
+    width: calc(100%);
+    padding:5px;
+    margin-bottom: 10px;
+    background-color: rgba(179, 167, 167, 0.5);
+    border-radius: 5px;
+}
+
+.textbox::placeholder{
+    color: antiquewhite;
+}
+
+button{
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(19, 126, 208);
+    border-radius: 50px;
+    color: antiquewhite;
+    padding:10px 20px;
+    
+}
+
+button:hover{
+    background-image: linear-gradient(to bottom, #0077cc, #004466);
+}
+.button-with-line {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted rgb(237, 230, 230); */
+}
+
+.button-with-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 1px;
+    background-color: #f5e8e8;
+}
+
+#text-center{
+    text-align: center;
+    color:antiquewhite;
+    padding:15px
+}
+
+#sign-in{
+    background-color: #515050;
+    color:white
+}
